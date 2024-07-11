@@ -566,6 +566,9 @@ header .recent-works .recent a p {
   font-size: 21px;
   color: #fff;
 }
+#contact .allicons .iconss a {
+  text-decoration: none;
+}
 
 .footer {
   padding-top: 10px;

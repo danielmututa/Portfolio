@@ -419,7 +419,7 @@ header{
         padding-top: 10px;
         padding-left: 10px;
         padding-right: 10px;
-        background-color: $color-bluewish;
+        background-color: $color-two;
         width: 30%;
         transition: transform 0.4s;
 
@@ -457,7 +457,7 @@ p{
        margin-top: 8px;
   width: 120px;
   height: 35px;
-  background-color: $color-four;
+  background-color: $color-button;
   display: flex;
   justify-content: center;
   border-radius: 3px;
@@ -614,13 +614,24 @@ img{
        align-items: center;
 
 
-.sideone{
+.card{
+    padding-top: 40px;
+    padding-bottom: 20px;
  display: flex;
  justify-content: center;
  align-items: center;
-    width:31%;
-   
+    width:20%;
+    height: 44vh;
+    background-color: $color-bluewish;
+   p{
+    padding-top: 15px;
+    font-family: $font-family;
+    font-size: $base-font-paragrph;
+    color: $color-white;
+    
+   }
     img{
+        
         width: 80%;
         height: 27vh;
         object-fit: cover;
@@ -890,14 +901,15 @@ transition: transform 0.7s;
 
     header{
         padding-top: 24px;
+        padding-bottom: 40px;
   .navbar{
     display: none;
   }
 
-  padding-bottom: 30px;
+  
  .myname{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 flex-direction: column;
 height: 65vh;
     .text{
@@ -927,6 +939,7 @@ height: 65vh;
     }
 
     .me{
+        padding-top: 30px;
         img{
             width: 290px;
             height: 290px;
@@ -966,11 +979,11 @@ height: 65vh;
 
 
     #myinfo{
-        padding: 10px;
-        padding-right: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
         // display: none;
-     padding-top: 30px;
-     padding-bottom: 30px;
+     padding-top: 40px;
+     padding-bottom: 40px;
      display: flex;
       
      h2{
@@ -1019,12 +1032,14 @@ margin-bottom: 1px;
 
 
   .me{
+   
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 25px;
+    padding-top: 0px;
 
     img{
+        display: none;
         height: 290px;
         width: 290px;
     }
@@ -1036,10 +1051,10 @@ margin-bottom: 1px;
     }
 
     #services{
-        padding-bottom: 30px;
-        padding-right: 10px;
-        padding-left: 10px;
-padding-top: 30px;
+        padding-bottom: 40px;
+        padding-right: 15px;
+        padding-left: 15px;
+padding-top: 40px;
 
   h2{
     font-size: $small-heading2;
@@ -1047,7 +1062,7 @@ padding-top: 30px;
 
   .allservices{
   
-padding-top: 25px;
+padding-top: 12px;
 
     .icon{
         padding-bottom: 0px;
@@ -1064,11 +1079,20 @@ padding-top: 25px;
         width: 100%;
 
 
-.sideone{
-width: 100%;
+.card{
+padding-top: 3px;
+padding-bottom: 3px;
+height: 17vh;
+// margin: 3px;
+width: 21%;
 img{
     width: 88%;
     height: 9vh;
+}
+p{
+    font-size: $small-paragraph;
+    padding-top: 0px;
+    margin-bottom: 0px;
 }
 
 }
@@ -1097,10 +1121,10 @@ img{
     }
 
     #work{
-        padding-bottom: 15px;
-padding-top: 25px;
-padding-left: 10px;
-padding-right: 10px;
+        padding-bottom: 28px;
+padding-top: 40px;
+padding-left: 15px;
+padding-right: 15px;
 h2{
     font-size: $small-heading2;
 }
@@ -1139,10 +1163,10 @@ h2{
 
 
     #contact{
-        padding-left:10px;
-       padding-right: 10px;
-        padding-top:25px;
-        padding-bottom: 25px;
+        padding-left:15px;
+       padding-right: 15px;
+        padding-top:40px;
+        padding-bottom: 40px;
 
         h2{
             font-size: $small-heading2;
@@ -1192,9 +1216,11 @@ input{
 
 
     .footer{
+        padding-top: 15px;
+        padding-bottom: 15px;
         align-items: center;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
         display: flex;
         flex-direction: column-reverse;
         // display: none;
@@ -1301,7 +1327,7 @@ input{
     display: none;
   }
 
-  padding-bottom: 40px;
+  padding-bottom: 60px;
  .myname{
     display: flex;
     justify-content: space-around;
@@ -1375,8 +1401,8 @@ height: 35vh;
     #myinfo{
         padding-left: 30px;
         padding-right: 30px;
-     padding-top: 40px;
-     padding-bottom: 40px;
+     padding-top: 60px;
+     padding-bottom: 60px;
      display: flex;
       
      h2{
@@ -1442,10 +1468,10 @@ margin-bottom: 1px;
     }
 
     #services{
-        padding-bottom: 40px;
+        padding-bottom: 60px;
         padding-right: 30px;
         padding-left: 30px;
-        padding-top: 40px;
+        padding-top: 60px;
 
   h2{
     font-size: $mini-heading2;
@@ -1468,7 +1494,9 @@ padding-top: 25px;
     .one{
         width: 100%;
 
-.sideone{
+.card{
+    width: 22%;
+    height: 19vh;
     img{
         height: 11vh;
     }
@@ -1500,8 +1528,8 @@ padding-top: 25px;
     }
 
     #work{
-        padding-bottom: 38px;
-padding-top: 40px;
+        padding-bottom: 58px;
+padding-top: 60px;
 padding-left: 30px;
 padding-right: 30px;
 h2{
@@ -1515,9 +1543,9 @@ h2{
     justify-content: space-between;
 
     .card{
-        margin: 2px;
+       
         // margin-bottom: 12px;
-        width: 100%;
+        width: 32%;
         .arrow{
             h3{
                 margin-bottom: 0px;
@@ -1558,8 +1586,8 @@ h2{
     #contact{
         padding-left:30px;
        padding-right: 30px;
-        padding-top:40px;
-        padding-bottom: 40px;
+        padding-top:60px;
+        padding-bottom: 60px;
 
         // display: none;
         h2{
@@ -1618,8 +1646,8 @@ input{
         align-items: center;
         padding-left: 30px;
         padding-right: 30px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
         display: flex;
         flex-direction: column-reverse;
         // display: none;
@@ -1628,7 +1656,7 @@ input{
             width: 100%;
             .links{
                 display: flex;
-                width: 50%;
+                width: 27%;
                 justify-content: space-between;
                 a{
                     margin-left: 0px;
@@ -1658,24 +1686,75 @@ input{
 
 @media (min-width: 769px) and (max-width: 950px){
 
+    .munehamb{
+        .log-in{
+          
+            .login{
+            
+                font-size: 21px;
+                color: white;
+            }
+        }
+        .overlay{
+            background-color: rgb(0, 0, 0);
+        }
+        span{
+            color: white;
+        }
+       
+    .logbanner{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        logo{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+           p{
+            font-size: $small-logo;
+            color: $color-white;
+            font-weight: 600;
+            margin-bottom: 0px;
+
+           }
+        }
+   
+
+        }
+        .overlay-content{
+            top: 16%;
+        }
+
+        .overlay{
+            .light-one{
+                padding-top: 10px;
+        padding-left: 11px;
+                width: 10%;
+            }
+            .closebtn {
+                position: absolute;
+                top: -18px;
+                right: 8px;
+                font-size: 71px;
+            }
+        } 
+        
+    }
+
 
 
     header{
   .navbar{
-    padding-left: 30px;
-    padding-right: 30px;
-    // display: none;
-    .li{
-        width: 50%;
-    }
+    display: none;
   }
 
-  padding-bottom: 40px;
+  padding-bottom: 60px;
  .myname{
     display: flex;
     justify-content: space-around;
 // flex-direction: column;
-height: 29vh;
+height: 35vh;
     .text{
         width: 30%;
 
@@ -1744,9 +1823,8 @@ height: 29vh;
     #myinfo{
         padding-left: 30px;
         padding-right: 30px;
-        // display: none;
-     padding-top: 40px;
-     padding-bottom: 40px;
+     padding-top: 60px;
+     padding-bottom: 60px;
      display: flex;
       
      h2{
@@ -1812,10 +1890,10 @@ margin-bottom: 1px;
     }
 
     #services{
-        padding-bottom: 40px;
+        padding-bottom: 60px;
         padding-right: 30px;
         padding-left: 30px;
-         padding-top: 40px;
+        padding-top: 60px;
 
   h2{
     font-size: $mini-heading2;
@@ -1838,13 +1916,14 @@ padding-top: 25px;
     .one{
         width: 100%;
 
-.sideone{
-
+.card{
+    width: 22%;
+    height: 19vh;
     img{
-        height: 10vh;
+        height: 11vh;
     }
-   
 }
+
 
     }
     
@@ -1871,8 +1950,8 @@ padding-top: 25px;
     }
 
     #work{
-        padding-bottom: 40px;
-padding-top: 40px;
+        padding-bottom: 58px;
+padding-top: 60px;
 padding-left: 30px;
 padding-right: 30px;
 h2{
@@ -1886,11 +1965,10 @@ h2{
     justify-content: space-between;
 
     .card{
-        margin: 3px;
+       
         // margin-bottom: 12px;
-        width: 100%;
+        width: 32%;
         .arrow{
-            margin-bottom: 0px;
             h3{
                 margin-bottom: 0px;
                 font-size: $mini-heading3;
@@ -1902,42 +1980,25 @@ h2{
     padding-top: 3px;
     margin-bottom: 8px;
                 font-size: $mini-paragraph;
-            }
-
+          }
+  
             img{
-                height: 14vh;
+                height: 15vh;
                 padding-top: 0px;
             }
 
 
-            .button{
+    .button{
 
-                width: 95px;
-                a{
-                  font-size: $mini-card-button;
-                }
-          
-              }
-        
-              .button{
-           height: 40px;
-                width: 98px;
-                a{
-                  font-size: $pro-button-card;
-                }
-          
-              }
+      width: 95px;
+      a{
+        font-size: $mini-card-button;
+      }
 
     }
 
-  .card:hover{
-    transform: translateY(-20px) ;
-    a{
-        transform: translateX(-5px);
+
     }
-
-  }
-
 }
         // display: none;
     }
@@ -1947,8 +2008,8 @@ h2{
     #contact{
         padding-left:30px;
        padding-right: 30px;
-        padding-top:40px;
-        padding-bottom: 40px;
+        padding-top:60px;
+        padding-bottom: 60px;
 
         // display: none;
         h2{
@@ -2007,8 +2068,8 @@ input{
         align-items: center;
         padding-left: 30px;
         padding-right: 30px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
         display: flex;
         flex-direction: column-reverse;
         // display: none;
@@ -2017,7 +2078,7 @@ input{
             width: 100%;
             .links{
                 display: flex;
-                width: 50%;
+                width: 27%;
                 justify-content: space-between;
                 a{
                     margin-left: 0px;
@@ -2060,7 +2121,7 @@ input{
     }
   }
 
-  padding-bottom: 60px;
+  padding-bottom: 70px;
  .myname{
     display: flex;
     justify-content: space-around;
@@ -2135,8 +2196,8 @@ height: 29vh;
         padding-left: 80px;
         padding-right: 80px;
         // display: none;
-     padding-top: 60px;
-     padding-bottom: 60px;
+     padding-top: 70px;
+     padding-bottom: 70px;
      display: flex;
       
      h2{
@@ -2202,11 +2263,11 @@ margin-bottom: 1px;
     }
 
     #services{
-        padding-bottom: 60px;
+        padding-bottom: 70px;
         padding-right: 80px;
         padding-left: 80px;
         
-padding-top: 60px;
+padding-top: 70px;
 
   h2{
     font-size: $pro-heading2;
@@ -2229,9 +2290,16 @@ padding-top: 25px;
     .one{
         width: 100%;
 
-.sideone{
- 
-    
+.card{
+ padding-top: 0px;
+ padding-bottom: 0px;
+    width: 22%;
+    height: 19vh;
+
+    p{
+        margin-bottom: 0px;
+        font-size: $pro-paragrph;
+    }
         img{
             height: 10vh;
         }
@@ -2264,10 +2332,10 @@ padding-top: 25px;
     }
 
     #work{
-        padding-bottom: 60px;
-padding-top: 60px;
-padding-left: 30px;
-padding-right: 30px;
+        padding-bottom: 70px;
+padding-top: 70px;
+padding-left: 80px;
+padding-right: 80px;
 h2{
     font-size: $pro-heading2;
 }
@@ -2278,8 +2346,9 @@ h2{
     justify-content: space-between;
 
     .card{
-        margin: 3px;
-        width: 100%;
+       
+        width: 32%;
+        
         .arrow{
             margin-bottom: 6px;
             h3{
@@ -2311,10 +2380,9 @@ h2{
 
 
     #contact{
-        // padding-left:30px;
-    //    padding-right: 30px;
-        padding-top:60px;
-        padding-bottom: 60px;
+       
+        padding-top:70px;
+        padding-bottom: 70px;
 
         // display: none;
         h2{

@@ -1590,12 +1590,10 @@ h2{
 .recent-work{
     padding-top: 17px;
     display: flex;
-    // flex-direction: column;
     justify-content: space-between;
 
     .card{
        
-        // margin-bottom: 12px;
         width: 32%;
         .arrow{
             h3{
@@ -1629,7 +1627,7 @@ h2{
 
     }
 }
-        // display: none;
+       
     }
 
 
@@ -1640,7 +1638,7 @@ h2{
         padding-top:60px;
         padding-bottom: 60px;
 
-        // display: none;
+       
         h2{
             font-size: $mini-heading2;
             margin-bottom: 18px;
@@ -1701,7 +1699,6 @@ input{
         padding-bottom: 30px;
         display: flex;
         flex-direction: column-reverse;
-        // display: none;
         .backtolinks{
             padding-bottom: 10px;
             width: 100%;
@@ -1805,7 +1802,7 @@ input{
  .myname{
     display: flex;
     justify-content: space-around;
-// flex-direction: column;
+
 height: 35vh;
     .text{
         width: 100%;
@@ -1963,7 +1960,7 @@ padding-top: 25px;
 
     
     display: flex;
-    // flex-direction: column;
+    
     width: 100%;
     .one{
         width: 100%;
@@ -2013,12 +2010,12 @@ h2{
 .recent-work{
     padding-top: 17px;
     display: flex;
-    // flex-direction: column;
+   
     justify-content: space-between;
 
     .card{
        
-        // margin-bottom: 12px;
+      
         width: 32%;
         .arrow{
             h3{
@@ -2052,7 +2049,7 @@ h2{
 
     }
 }
-        // display: none;
+       
     }
 
 
@@ -2063,7 +2060,7 @@ h2{
         padding-top:60px;
         padding-bottom: 60px;
 
-        // display: none;
+        
         h2{
             font-size: $mini-heading2;
             margin-bottom: 18px;
@@ -2124,7 +2121,7 @@ input{
         padding-bottom: 30px;
         display: flex;
         flex-direction: column-reverse;
-        // display: none;
+       
         .backtolinks{
             padding-bottom: 10px;
             width: 100%;
@@ -2178,7 +2175,7 @@ input{
  .myname{
     display: flex;
     justify-content: space-around;
-// flex-direction: column;
+
 height: 29vh;
     .text{
         width: 100%;
@@ -2248,7 +2245,6 @@ height: 29vh;
     #myinfo{
         padding-left: 80px;
         padding-right: 80px;
-        // display: none;
      padding-top: 70px;
      padding-bottom: 70px;
      display: flex;
@@ -2338,7 +2334,6 @@ padding-top: 25px;
 
     
     display: flex;
-    // flex-direction: column;
     width: 100%;
     .one{
         width: 100%;
@@ -2427,7 +2422,7 @@ h2{
   
 
 }
-        // display: none;
+       
     }
 
 
@@ -2436,8 +2431,6 @@ h2{
        
         padding-top:70px;
         padding-bottom: 70px;
-
-        // display: none;
         h2{
             font-size: $pro-heading2;
             margin-bottom: 18px;

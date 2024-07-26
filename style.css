@@ -470,8 +470,8 @@ header .recent-works .recent a p span {
   justify-content: center;
   align-items: center;
   width: 20%;
-  height: 44vh;
-  background-color: #00101A;
+  height: 38vh;
+  background-color: rgba(85, 85, 85, 0.3333333333);
 }
 #services .allservices .one .card p {
   padding-top: 15px;

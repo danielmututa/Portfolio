@@ -79,7 +79,7 @@ a {
   justify-content: space-between;
   align-items: center;
   display: flex;
-  background-color: #1A2245;
+  background-color: #00101A;
 }
 .logbanner .menubger {
   font-size: 30px;
@@ -93,13 +93,17 @@ a {
   }
 }
 header {
-  background-color: #111c37;
-  padding-bottom: 20px;
+  background-image: url("images/Abstract Futuristic Wallpaper.jpeg");
+  background-repeat: no-repeat;
+  height: 98vh;
+  width: 100%;
+  background-size: cover;
+  background-position-x: left;
+  background-position-y: center;
 }
 header .navbar {
   padding-right: 80px;
   padding-left: 80px;
-  padding-top: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -165,11 +169,34 @@ header .myname .text {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 80%;
+}
+header .myname .text .litleinfo .one p {
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 52px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  font-family: "Montserrat-Regular";
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
 }
 header .myname .text .litleinfo .one h1 {
   font-family: "Montserrat-Bold";
-  font-size: 60px;
+  font-size: 100px;
   color: white;
   font-weight: 600;
   animation: slideTop 1s ease forwards;
@@ -179,44 +206,6 @@ header .myname .text .litleinfo .one h1 {
   0% {
     transform: translateY(-100px);
     opacity: 0;
-  }
-}
-header .myname .text .litleinfo .one p {
-  font-weight: 500;
-  margin-bottom: 1px;
-  font-family: "Montserrat-Regular";
-  color: #fff;
-  font-size: 18px;
-  opacity: 0;
-  transition: 0.5s;
-  animation: slideLeft 1s ease forwards;
-  animation-delay: 0.4s;
-}
-@keyframes slideLeft {
-  0% {
-    transform: translateX(-100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
-header .myname .text .litleinfo .one .line {
-  animation: slideRight 1s ease forwards;
-  animation-delay: 0.4s;
-  opacity: 0;
-  width: 70px;
-  border: 1px solid #fff;
-}
-@keyframes slideRight {
-  0% {
-    transform: translateX(100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0px);
-    opacity: 1;
   }
 }
 header .myname .me {
@@ -254,7 +243,7 @@ header .recent-works .recent a .download {
 header .recent-works .recent a .fa {
   animation: scroll-down 3s infinite;
   font-size: 14px;
-  color: #111c37;
+  color: #000C18;
 }
 @keyframes scroll-down {
   0% {
@@ -275,6 +264,23 @@ header .recent-works .recent a p {
   font-size: 18px;
   padding-left: 5px;
   color: #fff;
+  display: flex;
+}
+header .recent-works .recent a p span {
+  font-family: "Montserrat-Regular";
+  animation: slideTop 1s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+  opacity: 0;
+}
+@keyframes slideTop {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px);
+    opacity: 1;
+  }
 }
 
 #work {
@@ -286,7 +292,7 @@ header .recent-works .recent a p {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: #111c37;
+  background-color: #00101A;
 }
 #work h2 {
   font-size: 30px;
@@ -305,7 +311,7 @@ header .recent-works .recent a p {
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: #1A2245;
+  background-color: #011D2B;
   width: 30%;
   transition: transform 0.4s;
 }
@@ -367,7 +373,7 @@ header .recent-works .recent a p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #1A2245;
+  background-color: #011D2B;
 }
 #myinfo h2 {
   font-size: 30px;
@@ -433,7 +439,7 @@ header .recent-works .recent a p {
 #services {
   padding-bottom: 100px;
   padding-top: 100px;
-  background-color: #1A2245;
+  background-color: #011D2B;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -465,7 +471,7 @@ header .recent-works .recent a p {
   align-items: center;
   width: 20%;
   height: 44vh;
-  background-color: #111c37;
+  background-color: #00101A;
 }
 #services .allservices .one .card p {
   padding-top: 15px;
@@ -503,7 +509,7 @@ header .recent-works .recent a p {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #111c37;
+  background-color: #00101A;
 }
 #contact h2 {
   font-size: 30px;
@@ -518,11 +524,12 @@ header .recent-works .recent a p {
   justify-content: space-between;
 }
 #contact .twoforms input {
+  outline: none;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   width: 49%;
-  background-color: #1A2245;
+  background-color: #011D2B;
   border: none;
   font-family: "Montserrat-Regular";
   font-size: 15px;
@@ -534,11 +541,12 @@ header .recent-works .recent a p {
   width: 50%;
 }
 #contact .oneform .texmessage {
+  outline: none;
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 100px;
   width: 100%;
-  background-color: #1A2245;
+  background-color: #011D2B;
   border: none;
   font-family: "Montserrat-Regular";
   font-size: 15px;
@@ -583,9 +591,14 @@ header .recent-works .recent a p {
 .footer {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #1A2245;
+  background-color: #011D2B;
   display: flex;
   justify-content: space-around;
+}
+.footer .allright {
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 .footer .allright p {
   color: #fff;
@@ -660,6 +673,7 @@ header .recent-works .recent a p {
     font-size: 71px;
   }
   header {
+    height: 60vh;
     padding-top: 24px;
     padding-bottom: 40px;
   }
@@ -670,16 +684,16 @@ header .recent-works .recent a p {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 65vh;
+    height: 47vh;
   }
   header .myname .text {
     width: 100%;
   }
   header .myname .text .litleinfo .one h1 {
-    font-size: 35px;
+    font-size: 45px;
   }
   header .myname .text .litleinfo .one p {
-    font-size: 12px;
+    font-size: 20px;
   }
   header .myname .text .litleinfo .one .line {
     width: 42px;
@@ -723,6 +737,7 @@ header .recent-works .recent a p {
     padding-bottom: 0px;
   }
   #myinfo .all .info {
+    padding-bottom: 25px;
     width: 100%;
   }
   #myinfo .all .info .passonate {
@@ -751,7 +766,6 @@ header .recent-works .recent a p {
     padding-top: 0px;
   }
   #myinfo .all .me img {
-    display: none;
     height: 290px;
     width: 290px;
   }
@@ -943,6 +957,7 @@ header .recent-works .recent a p {
     font-size: 71px;
   }
   header {
+    height: 41vh;
     padding-bottom: 60px;
   }
   header .navbar {
@@ -954,13 +969,13 @@ header .recent-works .recent a p {
     height: 35vh;
   }
   header .myname .text {
-    width: 30%;
+    width: 100%;
   }
   header .myname .text .litleinfo .one h1 {
-    font-size: 40px;
+    font-size: 70px;
   }
   header .myname .text .litleinfo .one p {
-    font-size: 15px;
+    font-size: 34px;
   }
   header .myname .text .litleinfo .one .line {
     width: 42px;
@@ -1219,6 +1234,7 @@ header .recent-works .recent a p {
     font-size: 71px;
   }
   header {
+    height: 41vh;
     padding-bottom: 60px;
   }
   header .navbar {
@@ -1230,13 +1246,13 @@ header .recent-works .recent a p {
     height: 35vh;
   }
   header .myname .text {
-    width: 30%;
+    width: 100%;
   }
   header .myname .text .litleinfo .one h1 {
-    font-size: 40px;
+    font-size: 70px;
   }
   header .myname .text .litleinfo .one p {
-    font-size: 15px;
+    font-size: 34px;
   }
   header .myname .text .litleinfo .one .line {
     width: 42px;
@@ -1454,6 +1470,7 @@ header .recent-works .recent a p {
 }
 @media (min-width: 951px) and (max-width: 1024px) {
   header {
+    height: 42vh;
     padding-bottom: 70px;
   }
   header .navbar {
@@ -1469,13 +1486,13 @@ header .recent-works .recent a p {
     height: 29vh;
   }
   header .myname .text {
-    width: 30%;
+    width: 100%;
   }
   header .myname .text .litleinfo .one h1 {
-    font-size: 50px;
+    font-size: 90px;
   }
   header .myname .text .litleinfo .one p {
-    font-size: 17px;
+    font-size: 46px;
   }
   header .myname .text .litleinfo .one .line {
     width: 50px;
@@ -1485,7 +1502,7 @@ header .recent-works .recent a p {
     height: 290px;
   }
   header .recent-works {
-    padding-top: 0px;
+    padding-top: 57px;
   }
   header .recent-works .recent a .download {
     width: 22px;

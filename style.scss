@@ -123,12 +123,22 @@
 
 
 header{
-    background-color: #111c37;
-    padding-bottom: 20px;
+    // background-color: #111c37;
+    // padding-bottom: 20px;
+    
+
+    background-image: url('images/Abstract Futuristic Wallpaper.jpeg');
+   background-repeat: no-repeat;
+   height: 98vh;
+    width: 100%;
+    background-size: cover;
+    background-position-x: left;
+   background-position-y: center;
+
     .navbar{
         padding-right: 80px;
         padding-left: 80px;
-        padding-top: 20px;
+        // padding-top: 20px;
         display: flex;
         justify-content: space-between;
 
@@ -215,12 +225,41 @@ header{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 30%;
+            width: 80%;
 
             .litleinfo{
 
                 .one{
                     // padding-bottom: 20px;
+
+                      
+                      p {
+                        position: relative;
+                        font-family: sans-serif;
+                        text-transform: uppercase;
+                        font-size: $base-font-banner-p;
+                        letter-spacing: 4px;
+                        overflow: hidden;
+                        font-family: $font-family-regular;
+                        background: linear-gradient(90deg, #000, #fff, #000);
+                        background-repeat: no-repeat;
+                        background-size: 80%;
+                        animation: animate 3s linear infinite;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: rgba(255, 255, 255, 0);
+                      }
+                      
+                      @keyframes animate {
+                        0% {
+                          background-position: -500%;
+                        }
+                        100% {
+                          background-position: 500%;
+                        }
+                      }
+
+
+
                  h1{
                     font-family:$font-family;
                     font-size: $base-font-heading1;
@@ -241,61 +280,39 @@ header{
 
                  }
                  
-                    p{
-                        // span{
-                        //     color: white;
-                        // }
-                        font-weight: 500;
-                        margin-bottom: 1px;
-                        font-family: $font-family-regular;
-                        color: $color-white;
-                        font-size:$base-font-paragrph ;
-                        opacity: 0;
-                        transition: 0.5s;
-                        animation: slideLeft 1s ease forwards;
-                        animation-delay: 0.4s;
-                    }
+                    // p{
+                    //     // span{
+                    //     //     color: white;
+                    //     // }
+                    //     font-weight: 500;
+                    //     margin-bottom: 1px;
+                    //     font-family: $font-family-regular;
+                    //     color: $color-white;
+                    //     font-size:$base-font-paragrph ;
+                    //     opacity: 0;
+                    //     transition: 0.5s;
+                    //     animation: slideLeft 1s ease forwards;
+                    //     animation-delay: 0.4s;
+                    // }
                   
-                    @keyframes slideLeft {
-                        0%{
-                          transform: translateX(-100px);
-                          opacity: 0;
-                        }  
+                    // @keyframes slideLeft {
+                    //     0%{
+                    //       transform: translateX(-100px);
+                    //       opacity: 0;
+                    //     }  
 
-                        100%{
-                            transform: translateX(0px);
-                            opacity: 1;
-                        }
+                    //     100%{
+                    //         transform: translateX(0px);
+                    //         opacity: 1;
+                    //     }
                         
       
-                       }
+                    //    }
                    
                  
                  
-                 .line{
-               animation: slideRight 1s ease forwards;
-               animation-delay: 0.4s;
-               opacity: 0;
-                    width: 70px;
-                    border: 1px solid $color-white;
-                   
-                    
-                    
-                 }
+               
 
-                 @keyframes slideRight {
-                    0%{
-                        transform: translateX(100px);
-                        opacity: 0;
-                    }
-                    100%{
-                        transform: translateX(0px);
-                        opacity: 1;
-                    }
-
-
-
-                 }
 
                 }
 
@@ -351,7 +368,7 @@ header{
 .fa{
     animation:scroll-down 3s infinite;
     font-size: 14px;
-    color: $color-bluewish;
+    color: #000C18;
 }
 
 
@@ -379,6 +396,30 @@ header{
             font-size: $base-font-paragrph;
             padding-left: 5px;
             color: $color-white;
+     display: flex;
+        span{
+            font-family: $font-family-regular;
+            animation:slideTop 1s ease forwards ;
+                 animation-delay: calc(.2s * var(--i));
+                 opacity: 0;
+        }
+
+        @keyframes slideTop{
+    
+            0%{
+                transform: translateX(100px);
+                opacity: 0;
+        
+            }
+        
+            100%{
+                transform: translate(0px);
+                opacity:1;
+            }
+        
+        
+        }
+
         }
     }
     }
@@ -399,7 +440,7 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: $color-bluewish;
+    background-color: $color-four;
     h2{
       font-size:  $base-font-heading2;
         font-weight: 600;
@@ -419,7 +460,7 @@ header{
         padding-top: 10px;
         padding-left: 10px;
         padding-right: 10px;
-        background-color: $color-two;
+        background-color: $color-bluewish;
         width: 30%;
         transition: transform 0.4s;
 
@@ -500,7 +541,7 @@ padding-bottom: 30px;
     justify-content: center;
     align-items: center;
 flex-direction: column;
-background-color: $color-four;
+background-color: $color-bluewish;
 h2{
     font-size: $base-font-heading2;
     font-family: $font-family;
@@ -587,7 +628,7 @@ img{
 #services{
     padding-bottom: 100px;
     padding-top: 100px;
-    background-color: $color-two;
+    background-color: $color-bluewish;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -598,6 +639,7 @@ img{
     font-family: $font-family;
     font-weight: 600;
     color: $color-white;
+
    }
 
   .allservices{
@@ -622,7 +664,7 @@ img{
  align-items: center;
     width:20%;
     height: 44vh;
-    background-color: $color-bluewish;
+    background-color: $color-four;
    p{
     padding-top: 15px;
     font-family: $font-family;
@@ -674,7 +716,7 @@ p{
     align-items: center;
     // justify-content: center;
     flex-direction: column;
-    background-color: $color-bluewish;
+    background-color: $color-four;
 h2{
     font-size: $base-font-heading2;
     font-weight: 600;
@@ -692,11 +734,12 @@ h2{
     display: flex;
     justify-content: space-between;
     input{
+        outline: none;
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 10px;
         width: 49%;
-background-color: #1A2245;
+background-color: $color-bluewish;
 border: none;
 font-family: $font-family-regular;
         font-size: $base-font-form;
@@ -712,11 +755,12 @@ font-family: $font-family-regular;
   padding-bottom: 20px;
        width:50% ; 
        .texmessage{
+        outline:none;
         padding-top: 10px;
         padding-left: 10px;
         padding-bottom: 100px;
         width: 100%;
-        background-color: #1A2245;
+        background-color: $color-bluewish;
         border: none;
         font-family: $font-family-regular;
         font-size: $base-font-form;
@@ -776,11 +820,16 @@ font-family: $font-family-regular;
 .footer{
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: $color-two;
+    background-color: $color-bluewish;
     display: flex;
     justify-content: space-around;
 
     .allright{
+
+        align-items: center;
+        justify-content: center;
+        display: flex;
+
         p{
             color: $color-white;
             font-size: $base-font-a_;
@@ -900,6 +949,7 @@ transition: transform 0.7s;
 
 
     header{
+        height: 60vh;
         padding-top: 24px;
         padding-bottom: 40px;
   .navbar{
@@ -911,7 +961,7 @@ transition: transform 0.7s;
     display: flex;
     justify-content: center;
 flex-direction: column;
-height: 65vh;
+height: 47vh;
     .text{
         width: 100%;
 
@@ -924,7 +974,7 @@ height: 65vh;
 
 
             p{
-                font-size: $small-paragraph;
+                font-size: $small-banner-p;
             }
            
             .line{
@@ -999,6 +1049,7 @@ height: 65vh;
         padding-bottom:0px;
 
   .info{
+    padding-bottom: 25px;
     width: 100%;
 
    .passonate{
@@ -1039,7 +1090,7 @@ margin-bottom: 1px;
     padding-top: 0px;
 
     img{
-        display: none;
+        // display: none;
         height: 290px;
         width: 290px;
     }
@@ -1323,6 +1374,7 @@ input{
 
 
     header{
+        height: 41vh;
   .navbar{
     display: none;
   }
@@ -1334,7 +1386,7 @@ input{
 // flex-direction: column;
 height: 35vh;
     .text{
-        width: 30%;
+        width: 100%;
 
        .litleinfo{
         .one{
@@ -1345,7 +1397,7 @@ height: 35vh;
 
 
             p{
-                font-size: $mini-paragraph;
+                font-size: $mini-banner-paragraph;
             }
            
             .line{
@@ -1745,6 +1797,7 @@ input{
 
 
     header{
+        height: 41vh;
   .navbar{
     display: none;
   }
@@ -1756,7 +1809,7 @@ input{
 // flex-direction: column;
 height: 35vh;
     .text{
-        width: 30%;
+        width: 100%;
 
        .litleinfo{
         .one{
@@ -1767,7 +1820,7 @@ height: 35vh;
 
 
             p{
-                font-size: $mini-paragraph;
+                font-size: $mini-banner-paragraph;
             }
            
             .line{
@@ -2112,6 +2165,7 @@ input{
 
 
    header{
+    height: 42vh;
   .navbar{
     padding-left: 30px;
     padding-right: 30px;
@@ -2128,7 +2182,7 @@ input{
 // flex-direction: column;
 height: 29vh;
     .text{
-        width: 30%;
+        width: 100%;
 
        .litleinfo{
         .one{
@@ -2139,7 +2193,7 @@ height: 29vh;
 
 
             p{
-                font-size: $pro-paragrph;
+                font-size: $pro-banner-paragraph;
             }
            
             .line{
@@ -2163,7 +2217,7 @@ height: 29vh;
  }
 
  .recent-works{
-    padding-top: 0px;
+    padding-top: 57px;
     .recent{
   a{
  

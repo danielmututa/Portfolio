@@ -517,13 +517,20 @@ header .recent-works .recent a p span {
   font-family: "Montserrat-Bold";
   color: #fff;
 }
-#contact .twoforms {
+#contact .form--container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#contact .form--container .twoforms {
   padding-top: 40px;
   width: 50%;
   display: flex;
   justify-content: space-between;
 }
-#contact .twoforms input {
+#contact .form--container .twoforms input {
   outline: none;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -535,12 +542,12 @@ header .recent-works .recent a p span {
   font-size: 15px;
   color: #fff;
 }
-#contact .oneform {
+#contact .form--container .oneform {
   padding-top: 8px;
   padding-bottom: 20px;
   width: 50%;
 }
-#contact .oneform .texmessage {
+#contact .form--container .oneform .texmessage {
   outline: none;
   padding-top: 10px;
   padding-left: 10px;
@@ -552,7 +559,7 @@ header .recent-works .recent a p span {
   font-size: 15px;
   color: #fff;
 }
-#contact .button {
+#contact .form--container .button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -561,12 +568,41 @@ header .recent-works .recent a p span {
   height: 45px;
   background-color: #3E59B6;
 }
-#contact .button a {
+#contact .form--container .button a {
   font-family: "Montserrat-Bold";
   text-decoration: none;
   font-weight: 600;
   color: #fff;
   font-size: 16px;
+}
+#contact .form--container .message--response {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#contact .form--container .success {
+  color: green;
+  animation: buttons 0.3s linear;
+  display: none;
+}
+#contact .form--container .danger {
+  color: red;
+  transition: 0.3s;
+  animation: buttons 0.3s linear;
+  display: none;
+}
+@keyframes buttons {
+  0% {
+    transition: scale(0.1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 #contact .allicons {
   padding-top: 30px;
@@ -857,25 +893,25 @@ header .recent-works .recent a p span {
   #contact h2 {
     font-size: 23px;
   }
-  #contact .twoforms {
+  #contact .form--container .twoforms {
     padding-top: 4px;
     width: 100%;
   }
-  #contact .twoforms input {
+  #contact .form--container .twoforms input {
     font-size: 12px;
   }
-  #contact .oneform {
+  #contact .form--container .oneform {
     padding-bottom: 2px;
     width: 100%;
   }
-  #contact .oneform .texmessage {
+  #contact .form--container .oneform .texmessage {
     font-size: 12px;
   }
-  #contact .button {
+  #contact .form--container .button {
     width: 100px;
     height: 40px;
   }
-  #contact .button a {
+  #contact .form--container .button a {
     font-size: 10px;
   }
   #contact .allicons {
@@ -1133,26 +1169,26 @@ header .recent-works .recent a p span {
     font-size: 25;
     margin-bottom: 18px;
   }
-  #contact .twoforms {
+  #contact .form--container .twoforms {
     padding-top: 4px;
     width: 100%;
   }
-  #contact .twoforms input {
+  #contact .form--container .twoforms input {
     font-size: 15px;
   }
-  #contact .oneform {
+  #contact .form--container .oneform {
     padding-top: 12px;
     padding-bottom: 10px;
     width: 100%;
   }
-  #contact .oneform .texmessage {
+  #contact .form--container .oneform .texmessage {
     font-size: 20px;
   }
-  #contact .button {
+  #contact .form--container .button {
     width: 130px;
     height: 45px;
   }
-  #contact .button a {
+  #contact .form--container .button a {
     font-size: 13px;
   }
   #contact .allicons {
@@ -1410,26 +1446,26 @@ header .recent-works .recent a p span {
     font-size: 25;
     margin-bottom: 18px;
   }
-  #contact .twoforms {
+  #contact .form--container .twoforms {
     padding-top: 4px;
     width: 100%;
   }
-  #contact .twoforms input {
+  #contact .form--container .twoforms input {
     font-size: 15px;
   }
-  #contact .oneform {
+  #contact .form--container .oneform {
     padding-top: 12px;
     padding-bottom: 10px;
     width: 100%;
   }
-  #contact .oneform .texmessage {
+  #contact .form--container .oneform .texmessage {
     font-size: 20px;
   }
-  #contact .button {
+  #contact .form--container .button {
     width: 130px;
     height: 45px;
   }
-  #contact .button a {
+  #contact .form--container .button a {
     font-size: 13px;
   }
   #contact .allicons {
@@ -1651,26 +1687,26 @@ header .recent-works .recent a p span {
     font-size: 35px;
     margin-bottom: 18px;
   }
-  #contact .twoforms {
+  #contact .form--container .twoforms {
     padding-top: 4px;
     width: 60%;
   }
-  #contact .twoforms input {
+  #contact .form--container .twoforms input {
     font-size: 17px;
   }
-  #contact .oneform {
+  #contact .form--container .oneform {
     padding-top: 12px;
     padding-bottom: 10px;
     width: 60%;
   }
-  #contact .oneform .texmessage {
+  #contact .form--container .oneform .texmessage {
     font-size: 17px;
   }
-  #contact .button {
+  #contact .form--container .button {
     width: 160px;
     height: 48px;
   }
-  #contact .button a {
+  #contact .form--container .button a {
     font-size: 17px;
   }
   #contact .allicons {

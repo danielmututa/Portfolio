@@ -311,21 +311,30 @@
 
    <div id="contact">
    <h2>CONTACT ME</h2>
+<form  action="https://formsubmit.co/d959b165a282adaf01cd5f52af745d1a" method="POST"    class="form--container">
 
 <div class="twoforms">
 
-<input type="name" placeholder="name" id="name" >
-<input type="name" placeholder="your-email" id="name" >
+<input type="text" name="Name" placeholder="name" id="name" required >
+<input type="email" name="Email" placeholder="your-email" id="email" required >
 
 </div>
 
 <div class="oneform">
-    <textarea name="" placeholder="message" id="message" class="texmessage"></textarea>
+    <textarea name="" placeholder="message" id="mssg" class="texmessage"></textarea>
 </div>
 
 <div class="button">
-    <a href="">Send Message</a>
+    <button type="submit" id="send" onclick="message()">Send Message</button>
 </div>
+
+<div class="message--response">
+    <div class="success" id="success">Your message successfully sent!</div>
+    <div class="danger" id="danger">Fields can't be Empty!</div>
+</div>
+</form>
+
+
 
 <div class="allicons">
 

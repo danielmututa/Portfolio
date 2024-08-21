@@ -725,6 +725,12 @@ h2{
 
 
 
+.form--container{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 
 
    .twoforms{
@@ -785,6 +791,47 @@ font-family: $font-family-regular;
         color: $color-white;
         font-size: $base-font-a_;
     }
+}
+
+.message--response{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.success{
+    color: green;
+    animation: buttons .3s linear;
+    display: none;
+}
+
+.danger{
+
+    color: red;
+    transition: .3s;
+    animation: buttons .3s linear;
+    display: none;
+
+}
+
+@keyframes buttons {
+    
+   0%{
+    transition: scale(0.1);
+   }
+   50%{
+    transform: scale(0.5);
+   }
+   100%{
+    transform: scale(1);
+   }
+
+
+}
+
+
 }
 
 
@@ -1221,6 +1268,10 @@ h2{
         h2{
             font-size: $small-heading2;
         }
+
+      .form--container{
+
+      
         .twoforms{
             padding-top: 4px;
     width: 100%;
@@ -1247,6 +1298,7 @@ input{
     }
 }
 
+      }
 .allicons{
     padding-top: 15px;
 
@@ -1643,6 +1695,10 @@ h2{
             font-size: $mini-heading2;
             margin-bottom: 18px;
         }
+
+        .form--container{
+
+        
         .twoforms{
             padding-top: 4px;
     width: 100%;
@@ -1670,6 +1726,7 @@ input{
     font-size:$mini_button ;
    }
 }
+        }
 
 .allicons{
     padding-top: 15px;
@@ -2065,6 +2122,10 @@ h2{
             font-size: $mini-heading2;
             margin-bottom: 18px;
         }
+
+        .form--container{
+
+        
         .twoforms{
             padding-top: 4px;
     width: 100%;
@@ -2092,6 +2153,7 @@ input{
     font-size:$mini_button ;
    }
 }
+        }
 
 .allicons{
     padding-top: 15px;
@@ -2435,6 +2497,10 @@ h2{
             font-size: $pro-heading2;
             margin-bottom: 18px;
         }
+
+        .form--container{
+
+        
         .twoforms{
             padding-top: 4px;
     width: 60%;
@@ -2462,6 +2528,8 @@ input{
     font-size:$pro-button;
    }
 }
+
+        }
 
 .allicons{
     padding-top: 15px;

@@ -184,6 +184,7 @@ header .myname .text .litleinfo .one p {
   background-size: 80%;
   animation: animate 3s linear infinite;
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 @keyframes animate {
